@@ -1,0 +1,55 @@
+header{
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    text-decoration: underline;
+    color: #2F4F4F;
+}
+h3{
+    font-size: 20px;
+    text-decoration: underline;
+    color: #2F4F4F;
+}
+img{
+    border-radius: 50%;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #D3D3D3;
+    border-style: dotted;
+    border-width: 15px;
+    border-color:#2F4F4F;
+    text-align: center;
+    margin: 50px;
+    padding: 25px;
+}
+#aboutme{
+    padding: 40px;
+    margin: 50px;
+    border-color: #2F4F4F;
+    border-width: 15px;
+    border-style: dotted;
+}
+#other{
+    padding: 40px;
+    margin: 50px;
+    border-color:#2F4F4F;
+    border-width: 15px;
+    border-style: dotted;
+}
+ul{
+    text-align: center;
+    text-align: left;
+    list-style-type: square;
+    display: inline-block;
+}
+footer{
+    text-align: center;
+}
+
+p + ul {
+    margin-top: -10px;
+    padding: 0;
+}
+
