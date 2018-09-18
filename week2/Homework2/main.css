@@ -40,8 +40,8 @@ img:hover {
 }
 h3{
     text-align: center;
-    color: white;
-    background-color:gray;
+    color: darkslategray;
+    background-color:cyan;
 }
 p{
     text-align: right;
