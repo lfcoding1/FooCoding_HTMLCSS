@@ -1,0 +1,219 @@
+html{
+    box-sizing: border-box;
+    background: rgb(149, 217, 240);
+    background-image: url("https://1.bp.blogspot.com/-WGhBed80BjU/VDVj-KB8_aI/AAAAAAAAGjc/sMAZ1wdCvDk/s1600/dark-textile-background.jpg");
+   
+}
+h1{
+    text-align: center;
+    font-size: 10vw;
+    font-family: "Arial", Times, serif;
+    color:cyan;
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+  
+}
+h2{
+    text-align: center;
+    font-size: 5vw;
+    font-family: "Arial", Times, serif;
+    color:white;
+    animation-name: grid;
+    animation-duration: 8s;
+}
+@keyframes grid {
+    from {color:darkslategray;}
+    to {color: white;}
+}
+
+section {
+    clear: both;
+}
+
+img{
+  float: left;
+  width: 40%; 
+  transition: width 2s;
+}
+
+img:hover {
+    width: 300px;
+}
+h3{
+    text-align: center;
+    color: white;
+    background-color:gray;
+}
+p{
+    text-align: right;
+}
+.grid-item{
+    background-image: linear-gradient(white,gray);
+    box-shadow: 5px 10px;
+}
+@media screen and (max-width: 600px) {
+    /*for mobile phones*/
+.grid-item{
+    list-style: none;
+    width: 45%;
+    margin: 1px;
+    border: solid;
+    padding: 1px;
+    text-align: right;
+    content: "";
+    display: inline-block;
+    overflow: auto;
+}
+
+grid:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.grid-item:nth-child(1){
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+#grid-floats {
+ list-style: none;
+ margin: 3rem;
+ padding: 0;
+ float: left;
+ width: 100%;
+ grid-template-columns: 1fr 1fr;
+ grid-column: span 1;
+}
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .grid-item{
+        list-style: none;
+        width: 30%;
+        margin: 1px;
+        border: solid;
+        padding: 1px;
+        text-align: right;
+        content: "";
+        display: inline-block;
+        overflow: auto;
+        grid-column: span 2;
+    }
+    .grid-item:nth-child(1){
+        width: 45%;
+        margin: 5px;
+        padding: 5px;
+    }
+    .grid-item:nth-child(2){
+        width: 45%;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .grid-item{
+        list-style: none;
+        width: 20%;
+        margin: 1px;
+        border: solid;
+        padding: 1px;
+        text-align: right;
+        content: "";
+        display: inline-block;
+        overflow: auto;
+        grid-column: span 4;
+    }
+    .grid-item:nth-child(1){
+        width: 40%;
+        margin: 5px;
+        padding: 5px;
+        clear: both; 
+}
+
+@media screen and (max-width: 600px) {
+    /*for mobile phones*/
+#grid-flex {
+    display: flex;  
+    flex-flow: row wrap;
+
+    flex-wrap: wrap;
+}
+
+#grid-flex > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+
+#grid-flex li:nth-of-type(1){
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
+#grid-flex li:nth-of-type(n+2){
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+#grid-flex {
+    display: flex;  
+    flex-flow: row wrap;
+
+    flex-wrap: wrap;
+}
+
+#grid-flex > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+
+#grid-flex li:nth-of-type(1){
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+#grid-flex li:nth-of-type(1){
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+#grid-flex li:nth-of-type(n+3){
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 33%;
+    flex-wrap: wrap;
+}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    #grid-flex {
+        display: flex;  
+        flex-flow: row wrap;
+    
+        flex-wrap: wrap;
+    }
+    
+    #grid-flex > * {
+        padding: 10px;
+        flex: 1 100%;
+      }
+    
+    #grid-flex li:nth-of-type(1){
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 40%;
+    }
+        #grid-flex li:nth-of-type(n+2){
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 20%;
+        flex-wrap: wrap;
+    }
+    }
