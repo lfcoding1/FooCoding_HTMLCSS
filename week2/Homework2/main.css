@@ -2,15 +2,17 @@ html{
     box-sizing: border-box;
     background: rgb(149, 217, 240);
     background-image: url("https://1.bp.blogspot.com/-WGhBed80BjU/VDVj-KB8_aI/AAAAAAAAGjc/sMAZ1wdCvDk/s1600/dark-textile-background.jpg");
-   
+    margin: 2px;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 h1{
     text-align: center;
     font-size: 10vw;
     font-family: "Arial", Times, serif;
     color:cyan;
     transform: matrix(1, -0.3, 0, 1, 0, 0);
-  
 }
 h2{
     text-align: center;
@@ -19,7 +21,9 @@ h2{
     color:white;
     animation-name: grid;
     animation-duration: 8s;
+    
 }
+
 @keyframes grid {
     from {color:darkslategray;}
     to {color: white;}
@@ -36,7 +40,7 @@ img{
 }
 
 img:hover {
-    width: 300px;
+    width: 10rem;
 }
 h3{
     text-align: center;
@@ -49,6 +53,13 @@ p{
 .grid-item{
     background-image: linear-gradient(white,gray);
     box-shadow: 5px 10px;
+    padding: 1em;
+    height: 400px;
+    transition: 0.3s;
+}
+.grid-item:hover{
+    background-color: blue;
+    color: blue;
 }
 @media screen and (max-width: 600px) {
     /*for mobile phones*/
@@ -117,22 +128,22 @@ grid:after {
     .grid-item{
         list-style: none;
         width: 20%;
-        margin: 1px;
         border: solid;
-        padding: 1px;
         text-align: right;
         content: "";
-        display: inline-block;
         overflow: auto;
         grid-column: span 4;
     }
     .grid-item:nth-child(1){
         width: 40%;
-        margin: 5px;
-        padding: 5px;
         clear: both; 
+        padding: 1em;
+    }
+.grid-item:nth-child(2){
+        width: 20%;
+        padding: 1em;
 }
-
+  /*FLEXBOX*/
 @media screen and (max-width: 600px) {
     /*for mobile phones*/
 #grid-flex {
