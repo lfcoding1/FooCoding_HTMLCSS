@@ -6,7 +6,7 @@ html{
 }
 *, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 h1{
     text-align: center;
     font-size: 10vw;
@@ -51,9 +51,9 @@ section {
 }
 
 img{
-  float: left;
-  width: 40%; 
-  transition: width 2s;
+    float: left;
+    width: 40%; 
+    transition: width 2s;
 }
 
 img:hover {
@@ -103,40 +103,40 @@ grid:after {
     padding: 5px;
 }
 #grid-floats {
- list-style: none;
- margin: 3rem;
- padding: 0;
- float: left;
- width: 100%;
- grid-template-columns: 1fr 1fr;
- grid-column: span 1;
+    list-style: none;
+    margin: 3rem;
+    padding: 0;
+    float: left;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 1;
 }
 }
 
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
-    .grid-item{
-        list-style: none;
-        width: 30%;
-        margin: 1px;
-        border: solid;
-        padding: 1px;
-        text-align: right;
-        content: "";
-        display: inline-block;
-        overflow: auto;
-        grid-column: span 2;
+.grid-item{
+    list-style: none;
+    width: 30%;
+    margin: 1px;
+    border: solid;
+    padding: 1px;
+    text-align: right;
+    content: "";
+    display: inline-block;
+    overflow: auto;
+    grid-column: span 2;
     }
-    .grid-item:nth-child(1){
-        width: 45%;
-        margin: 5px;
-        padding: 5px;
+.grid-item:nth-child(1){
+    width: 45%;
+    margin: 5px;
+    padding: 5px;
     }
-    .grid-item:nth-child(2){
-        width: 45%;
-        margin: 5px;
-        padding: 5px;
+.grid-item:nth-child(2){
+    width: 45%;
+    margin: 5px;
+    padding: 5px;
     }
 }
 
